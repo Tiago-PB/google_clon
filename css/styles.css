@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #202124;
+}
+.navbar {
+    display: flex;
+    height: 48px;
+    padding: 8px;
+    align-items: center;
+    justify-content: end;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.navbar__elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.navbar__li {
+    padding-left: 15px;
+    list-style: none;
+    font: 13px/27px Roboto,Arial,sans-serif;
+    z-index: 986
+}
+
+.navbar__li:hover { /* es un pseudoelemento, cuando pasamos el mouse sobre un elemento, se genera una acción */
+    cursor: pointer; /* pone el cursor */
+    text-decoration: underline; /* subraya la palabra */
+}
+
+.navbar__media {
+    display: flex;
+    align-items: center;
+    /* Alinea los elementos verticalmente */
+    justify-content: center;
+    /* Alinea los elementos horizontalmente */
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+.navbar__ball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+}
+
+.navbar__ball:hover {
+    background-color: #373a39;
+    border-radius: 50%;
+}
+
+.navbar__imagemenu {
+    fill: #ffffff;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    background-image: url(../assets/img/circle.svg), url("https://lh3.googleusercontent.com/ogw/AF2bZyhCmOAv8opauo-448g8pbb0u8WRqPo2-Ngjyj-V8pLTi6E=s32-c-mo");
+    background-position: center;   
+}
+
+/* ------------------Sección Main --------------------- */
+
+main{
+    display: flex;
+    flex-direction: column; /* cuando se usa esta propiedad, la forma de alineación vertical y horizontal se invierten */
+    align-items: center; /* Alinea los elementos horizontalmente */
+
+}
+
+.main__logo{
+    width: 274px;
+    height: 200px;
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.main__search{
+    width: 560px;
+    height: 41px;
+    padding: 5px 8px 0px 14px;
+    box-shadow: 0 1px 6px 0 var(#e8e8e8);
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 52px 422px 41px 41px;
+    grid-template-rows: 44px;
+    justify-items: center;
+    align-items: center;
+   
+}
+
+.main__input{
+    width: 422px;
+    height: 42px;
+}
+
+.main__img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.main__img--icons{
+    width: 24px;
+    height: 24px;
+}
