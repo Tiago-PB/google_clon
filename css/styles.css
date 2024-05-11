@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #202124;
+    background-color: #353535;
 }
 .navbar {
     display: flex;
@@ -58,6 +58,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 15px;
     height: 38px;
     width: 38px;
 }
@@ -65,6 +66,7 @@ body{
 .navbar__ball:hover {
     background-color: #373a39;
     border-radius: 50%;
+    justify-content: flex-start;
 }
 
 .navbar__imagemenu {
@@ -74,6 +76,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 
 .navbar__profile {
     width: 40px;
@@ -102,10 +105,12 @@ main{
 }
 
 .main__search{
+    border-color: white;
+    fill:currentColor;
     width: 560px;
     height: 41px;
     padding: 5px 8px 0px 14px;
-    box-shadow: 0 1px 6px 0 var(#e8e8e8);
+    box-shadow: 0 1px 6px 0 var(#202124);
     border-radius: 50px;
     display: grid;
     grid-template-columns: 52px 422px 41px 41px;
@@ -129,4 +134,34 @@ main{
 .main__img--icons{
     width: 24px;
     height: 24px;
+}
+
+.main__grid{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 112px 112px 112px 112px;
+    grid-template-rows: repeat(2, 114px);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--icons{
+    width: 26px;
+    height: 26px;
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+    background-color: #2a2a2b;
+    border-radius: 50%;
+}
+
+.footer__letter{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 6px;
+    padding: 2px 8px;
+    font: 13px/27px Arial;
+    text-decoration: none;
+
 }
